@@ -2353,7 +2353,7 @@ size_t bvlc_sc_remove_orig_and_dest(uint8_t **ppdu, size_t pdu_len)
             offs += BVLC_SC_VMAC_SIZE;
         }
         pdu[1] &= ~(BVLC_SC_CONTROL_ORIG_VADDR);
-        pdu[1] &= ~(BVLC_SC_CONTROL_DEST_VADDR);
+        pdu[1] &= ~(BVLC_SC_CONTROL_ORIG_VADDR);
         memmove(&pdu[offs - 4], pdu, 4);
         *ppdu = &pdu[offs - 4];
         return pdu_len - offs + 4;

@@ -1,0 +1,3 @@
+# CI replay marker for test/test_bvlc-sc
+feature_branch: replay-fe710f59
+workflow: .github/workflows/bsc-tests-linux.yml
